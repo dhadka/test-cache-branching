@@ -28,4 +28,4 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: .
-          key: foo
+          key: bar
