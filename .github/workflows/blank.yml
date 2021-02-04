@@ -24,6 +24,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - run: |
+          whoami
+          name=$(whoami)
+          user "$name"
+          groups "$name"
 
       - uses: actions/cache@v2
         with:
